@@ -16,8 +16,8 @@ public class Queen extends Chesspiece {
         }
 
         // Berechne die absolute Differenz auf der x- und y-Achse.
-        int dx = Math.abs(from.getX() - to.getX());
-        int dy = Math.abs(from.getY() - to.getY());
+        int dx = Math.abs(from.x() - to.x());
+        int dy = Math.abs(from.y() - to.y());
 
         // Bedingung für Turm-Bewegung (horizontal oder vertikal)
         boolean isStraight = (dx == 0 || dy == 0);

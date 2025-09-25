@@ -4,7 +4,6 @@ import org.example.Attributes.Color;
 import org.example.Attributes.Point;
 import org.example.Chesspieces.Chesspiece;
 import org.example.Chesspieces.King;
-import org.example.Chesspieces.Queen;
 
 import java.util.Map;
 import java.util.Optional;
@@ -61,16 +60,16 @@ public class LogicInterpreter {
     }
 
     private boolean isPathClear(Map<Point, Chesspiece> pieces, Point from, Point to) {
-        int dx = Integer.compare(to.getX(), from.getX());
-        int dy = Integer.compare(to.getY(), from.getY());
+        int dx = Integer.compare(to.x(), from.x());
+        int dy = Integer.compare(to.y(), from.y());
 
-        Point current = new Point(from.getX() + dx, from.getY() + dy);
+        Point current = new Point(from.x() + dx, from.y() + dy);
 
         while (!current.equals(to)) {
             if (pieces.containsKey(current)) {
                 return false;
             }
-            current = new Point(current.getX() + dx, current.getY() + dy);
+            current = new Point(current.x() + dx, current.y() + dy);
         }
 
         return true;

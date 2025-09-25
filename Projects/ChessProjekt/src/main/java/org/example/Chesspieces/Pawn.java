@@ -21,8 +21,8 @@ public class Pawn extends Chesspiece {
             return false;
         }
 
-        int dx = to.getX() - from.getX();
-        int dy = to.getY() - from.getY();
+        int dx = to.x() - from.x();
+        int dy = to.y() - from.y();
 
         switch (this.direction) {
             case UP:

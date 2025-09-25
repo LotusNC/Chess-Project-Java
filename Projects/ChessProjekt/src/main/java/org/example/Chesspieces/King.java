@@ -16,8 +16,8 @@ public class King extends Chesspiece {
         }
 
         // Berechne die absolute Distanz auf beiden Achsen
-        int dx = Math.abs(from.getX() - to.getX());
-        int dy = Math.abs(from.getY() - to.getY());
+        int dx = Math.abs(from.x() - to.x());
+        int dy = Math.abs(from.y() - to.y());
 
         // Der König kann sich in jede Richtung bewegen, aber nur um maximal ein Feld.
         // Das bedeutet, der Abstand auf der x-Achse und auf der y-Achse darf

@@ -16,8 +16,8 @@ public class Rook extends Chesspiece {
         }
 
         // Berechne die Distanz auf beiden Achsen
-        int dx = Math.abs(from.getX() - to.getX());
-        int dy = Math.abs(from.getY() - to.getY());
+        int dx = Math.abs(from.x() - to.x());
+        int dy = Math.abs(from.y() - to.y());
 
         // Gib true zurück, wenn die Bewegung entweder GERADE (wie ein Turm)
         // ODER DIAGONAL (wie ein Läufer) ist.

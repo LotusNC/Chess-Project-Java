@@ -16,8 +16,8 @@ public class Knight extends Chesspiece {
         }
 
         // Berechne die absolute Distanz auf beiden Achsen
-        int dx = Math.abs(from.getX() - to.getX());
-        int dy = Math.abs(from.getY() - to.getY());
+        int dx = Math.abs(from.x() - to.x());
+        int dy = Math.abs(from.y() - to.y());
 
         // Die L-förmige Bewegung des Springers:
         // Entweder 2 Felder horizontal und 1 vertikal,
