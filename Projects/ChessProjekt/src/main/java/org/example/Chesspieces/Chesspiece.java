@@ -21,4 +21,8 @@ public abstract class Chesspiece implements ChesspieceInterface {
     public Point getPosition() {
         return new Point(this.position.getX(), this.position.getY());
     }
+
+    public Color getColor() {
+        return this.color;
+    }
 }
